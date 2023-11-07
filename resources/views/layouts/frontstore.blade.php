@@ -11,12 +11,17 @@
         <link rel="preconnect" href="https://fonts.bunny.net">
         <link href="https://fonts.bunny.net/css?family=figtree:400,500,600&display=swap" rel="stylesheet" />
 
+        <!-- favicon -->
+        <link rel="icon" href="{{asset('assets/favicon.jpg')}}" type="image/png" sizes="16x16">
+        <link rel="icon" href="{{asset('assets/favicon.jpg')}}" type="image/png" sizes="32x32">
+        <link rel="icon" href="{{asset('assets/favicon.jpg')}}" type="image/png" sizes="192x192">
+
         <!-- Scripts -->
         @vite(['resources/css/app.css', 'resources/js/app.js'])
     </head>
-    <body class="font-sans antialiased">
+    <body class="font-sans antialiased bg-main-black">
         <div class="min-h-screen bg-gray-100">
-            <div class="min-h-[12rem]">
+            <div class="xl:min-h-[12rem] md:min-h-[6rem]">
                 @include('layouts.navigation-frontstore')
             </div>
 

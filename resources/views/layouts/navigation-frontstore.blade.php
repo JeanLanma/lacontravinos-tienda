@@ -1,8 +1,8 @@
 <header class="bg-main-black w-full fixed">
-    <div class="w-full px-40 flex justify-between items-center">    
+    <div class="w-full px-40 md:px-16 flex justify-between items-center">    
         <!-- Logo -->
         <div>
-            <div class="w-48">
+            <div class="xl:w-48 md:w-24">
                 <img src="{{ asset('assets/logo-lacontravinos.png') }}" alt="Logo la contravinos">
             </div>
         </div>
