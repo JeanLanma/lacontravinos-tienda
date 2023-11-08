@@ -1,5 +1,5 @@
 <header class="bg-main-black w-full fixed">
-    <div class="w-full px-40 md:px-16 flex justify-between items-center">    
+    <div class="w-full px-40 md:px-16 xl:px-[9.75rem] flex justify-between items-center">    
         <!-- Logo -->
         <div>
             <div class="xl:w-48 md:w-24">

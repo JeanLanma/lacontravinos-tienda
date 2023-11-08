@@ -38,6 +38,38 @@
             <main>
                 @yield('content')
             </main>
+
+            <footer class="bg-main-black w-full flex justify-between items-center text-center md:px-16 xl:px-44">
+
+                <div>
+                    <div class="w-24">
+                        <img src="{{ asset('assets/logo-lacontravinos.png') }}" alt="Logo la contravinos">
+                    </div>
+                </div>
+                <div class="text-center">
+                    <h5 class="text-white text-center">Todos los derechos reservados La Contra 2023</h5>
+                </div>
+                <div>
+                    <ul class="flex items-center gap-4">
+                        <li>
+                            <a href="#">
+                                <img class="stroke-white fill-white w-8" src="{{ asset('assets/icons/f-facebook.svg') }}" alt="facebook">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img class="stroke-white fill-white w-6" src="{{ asset('assets/icons/instagram.svg') }}" alt="instagram">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img class="stroke-white fill-white w-8" src="{{ asset('assets/icons/twitter-x.svg') }}" alt="twitter">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+            </footer>
         </div>
     </body>
 </html>
