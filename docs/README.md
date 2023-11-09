@@ -11,3 +11,10 @@ En principio este proyecto es un Ecommerce y se va a enfoncar en administrar las
 ## Dependencias
 - [Laravel Breeze](https://laravel.com)
 - [tailwindcss](https://tailwindcss.com)
+
+## Sobre los layouts
+Teniendo dos layouts distintos uno para la parte informativa y otro para la tienda
+- Layout informativo: `resources/views/layouts/frontstore.blade.php`
+- Layout tienda: `resources/views/layouts/store.blade.php`
+
+ya que cada uno cuenta con sus propias secciones y estilos
