@@ -62,7 +62,7 @@
         </div>
     </div>
 </header>
-<header class="bg-main-black w-full z-10">
+<header class="lg:hidden bg-main-black w-full z-10">
     <div class="w-full h-20 flex justify-between items-center px-9">    
         <!-- Logo -->
         <div>
