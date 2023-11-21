@@ -21,8 +21,8 @@
     </head>
     <body class="font-sans antialiased bg-main-black">
         <div class="min-h-screen bg-gray-100">
-            <div class="xl:min-h-[12rem] md:min-h-[6rem]">
-                @include('layouts.navigation-frontstore')
+            <div class="xl:min-h-[12rem] md:min-h-[6rem] h-72">
+                @include('layouts.navigation-store')
             </div>
 
             <!-- Page Content -->
