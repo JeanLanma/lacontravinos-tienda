@@ -63,11 +63,11 @@
     </div>
 </header>
 <header class="lg:hidden bg-main-black w-full h-full z-10">
-    <div class="w-full h-20 flex flex-col justify-between items-center px-9">    
+    <div class="w-full flex flex-col justify-center items-center px-9">    
         <!-- Logo -->
         <div>
-            <div class="w-60 md:w-24 xl:w-48">
-                <img src="{{ asset('assets/logo-lacontravinos.png') }}" alt="Logo la contravinos">
+            <div class="w-72 md:w-24 xl:w-48 my-8">
+                <img class="mx-auto" src="{{ asset('assets/Marca-La-contra.png') }}" alt="Logo la contravinos">
             </div>
         </div>
         <!-- Nav Links -->
@@ -75,11 +75,11 @@
 
             <div>
                 <div class="border-y-2 border-y-main-red">
-                    <button class="text-main-red leading-6 text-center pb-1">Menu</button>
+                    <button class="text-main-red leading-6 text-center pb-1 uppercase">Menu</button>
                 </div>
             </div>
                 
-            <div class="flex items-center gap-4">
+            <div class="flex items-center gap-3">
                 <div class="hover:opacity-70 transition-opacity duration-200">
                     <a href="#"><img class="w-6" src="{{ asset('assets/icons/person-outline.svg') }}" alt="icon"></a>
                 </div>

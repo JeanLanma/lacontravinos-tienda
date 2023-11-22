@@ -1,50 +1,89 @@
 @extends('layouts.store')
 
 @section('content')
-<div class="h-full w-full min-h-screen min-w-full py-12" style="background-image: url('{{asset('assets/hero-main2.png')}}'); background-size: cover; background-position: center;">
+<div class="w-full min-h-[14rem] min-w-full py-12" style="background-image: url('{{asset('assets/img/portada_tienda-1.jpg')}}'); background-size: cover; background-position: center;">
     <div class="flex flex-col items-center w-full">
         
         <div class="px-10 md:px-0 text-center">
-            <h1 class="text-2xl md:text-4xl md:text-[2.5rem] font-bold text-white">¡Bienvenido a La Contra, La Tienda del Vino Mexicano!</h1>
+            <h2 class="text-[2.5rem] text-white">Tienda</h2>
         </div>
-
-        <div class="w-full mt-12 lg:mt-36 text-center flex flex-col justify-center">
-            
-            <div class="mb-16">
-                <h3 class="text-xl md:text-4xl font-bold text-white">ELIGE TU CIUDAD MÁS CERCANA</h3>
+        <div class="text-white text-lg flex items-center gap-2">
+            <div>
+                <p class="opacity-70">Inicio</p>
             </div>
-            
-            <div class="flex justify-center h-[27rem] md:h-auto">
-                <ul class="flex flex-col md:flex-row gap-6 bg-black absolute px-12 md:px-12 xl:px-24 py-5 text-white font-bold text-2xl">
-                    <li class="hover:opacity-70 transition-opacity duration-200">
-                        <a href="#">Ensenada</a>
-                    </li>
-                    <li class="hover:opacity-70 transition-opacity duration-200">
-                        <a href="#">Tijuana</a>
-                    </li>
-                    <li class="hover:opacity-70 transition-opacity duration-200">
-                        <a href="#">Guadalajara</a>
-                    </li>
-                    <li class="hover:opacity-70 transition-opacity duration-200">
-                        <a href="#">Querétaro</a>
-                    </li>
-                    <li class="hover:opacity-70 transition-opacity duration-200">
-                        <a href="#">Roma</a>
-                    </li>
-                    <li class="hover:opacity-70 transition-opacity duration-200">
-                        <a href="#">Coyoacán</a>
-                    </li>
-                    <li class="hover:opacity-70 transition-opacity duration-200">
-                        <a href="#">Mérida</a>
-                    </li>
-                    <li class="hover:opacity-70 transition-opacity duration-200">
-                        <a href="#">Oaxaca</a>
-                    </li>
-                </ul>
+            <div>
+                <p class="opacity-70 text-base">|</p>
             </div>
-
+            <div>
+                <p class="opacity-100">Tienda</p>
+            </div>
         </div>
-    
     </div>
 </div>
+<!-- main - products -->
+<section class="bg-black px-4">
+    <!-- Filters and sorting -->
+    <div class="py-8">
+        <div class="flex flex-col items-end gap-4">
+            <div>
+                <span class="inline-flex items-center gap-2 bg-white h-10 px-4 group">Orden por defecto <span class="group-hover:rotate-180 transition-transform duration-300"><img src="{{ asset('assets/icons/chevron-down.svg') }}" alt="arrow down"></span></span>
+            </div>
+            <div>
+                <div class="inline-flex items-center gap-2 bg-white h-10 px-4 group">
+                    <span class="text-sm">
+                        Mostrar
+                    </span>
+                    <ul class="flex gap-4 text-sm">
+                        <li class="text-main-red">12</li>
+                        <li>24</li>
+                        <li>36</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Products -->
+    <div>
+        <a href="#">
+            <article class="py-4 flex flex-col items-center gap-1">
+                <div>
+                    <img src="{{ asset('assets/tmp/18-Cosechas-2-600x899.png') }}" alt="Producto 18 cosechas">
+                </div>
+                <div class="flex flex-col items-center gap-3">
+                    <h3 class="text-white text-base">18 cosechas</h3>
+                    <p class="text-main-red-2 text-lg">$4,856.00</p>
+            </article>
+        </a>
+        
+        <a href="#">
+            <article class="py-4 flex flex-col items-center gap-1">
+                <div>
+                    <img src="{{ asset('assets/tmp/18-Cosechas-2-600x899.png') }}" alt="Producto 18 cosechas">
+                </div>
+                <div class="flex flex-col items-center gap-3">
+                    <h3 class="text-white text-base">18 cosechas</h3>
+                    <p class="text-main-red-2 text-lg">$4,856.00</p>
+            </article>
+        </a>
+        
+        
+        <a href="#">
+            <article class="py-4 flex flex-col items-center gap-1">
+                <div>
+                    <img src="{{ asset('assets/tmp/18-Cosechas-2-600x899.png') }}" alt="Producto 18 cosechas">
+                </div>
+                <div class="flex flex-col items-center gap-3">
+                    <h3 class="text-white text-base">18 cosechas</h3>
+                    <p class="text-main-red-2 text-lg">$4,856.00</p>
+            </article>
+        </a>
+        
+    </div>
+    <!-- Pagination -->
+    <div>
+        <div>
+            <span class="text-white bg-main-red w-10 h-10">1</span>
+        </div>
+    </div>
+</section>
 @endsection

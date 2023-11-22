@@ -18,6 +18,7 @@ export default {
             colors: {
                 'main-black': '#0A0A0A',
                 'main-red': '#FF0013',
+                'main-red-2': '#BE161D',
                 'acent-blue': '#2EA3F2'
             },
         },
