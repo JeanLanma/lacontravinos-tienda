@@ -1,7 +1,7 @@
 @extends('layouts.store')
 
 @section('content')
-<div class="w-full min-h-[14rem] min-w-full py-12" style="background-image: url('{{asset('assets/img/portada_tienda-1.jpg')}}'); background-size: cover; background-position: center;">
+<section class="w-full min-h-[14rem] lg:h-72 min-w-full py-12" style="background-image: url('{{asset('assets/img/portada_tienda-1.jpg')}}'); background-size: cover; background-position: center;">
     <div class="flex flex-col items-center w-full">
         
         <div class="px-10 md:px-0 text-center">
@@ -9,24 +9,27 @@
         </div>
         <div class="text-white text-lg flex items-center gap-2">
             <div>
-                <p class="opacity-70">Inicio</p>
+                <p class="text-main-black-2">Inicio</p>
             </div>
             <div>
-                <p class="opacity-70 text-base">|</p>
+                <p class="text-main-black-2 text-base">|</p>
             </div>
             <div>
                 <p class="opacity-100">Tienda</p>
             </div>
         </div>
     </div>
-</div>
+</section>
 <!-- main - products -->
 <section class="bg-black px-4">
     <!-- Filters and sorting -->
-    <div class="py-8">
-        <div class="flex flex-col items-end gap-4">
+    <div class="py-8 lg:py-2">
+        <div class="flex flex-col lg:flex-row items-end lg:justify-end gap-4 lg:gap-8 lg:items-center">
             <div>
                 <span class="inline-flex items-center gap-2 bg-white h-10 px-4 group">Orden por defecto <span class="group-hover:rotate-180 transition-transform duration-300"><img src="{{ asset('assets/icons/chevron-down.svg') }}" alt="arrow down"></span></span>
+            </div>
+            <div>
+                <p class="text-white">Showing <span>1</span>– <span>12</span> of <span>257</span> item(s)</p>
             </div>
             <div>
                 <div class="inline-flex items-center gap-2 bg-white h-10 px-4 group">
@@ -43,7 +46,7 @@
         </div>
     </div>
     <!-- Products -->
-    <div>
+    <div class="md:flex md:max-w-4xl">
         <a href="#">
             <article class="py-4 flex flex-col items-center gap-1">
                 <div>
@@ -66,7 +69,6 @@
             </article>
         </a>
         
-        
         <a href="#">
             <article class="py-4 flex flex-col items-center gap-1">
                 <div>
@@ -77,7 +79,6 @@
                     <p class="text-main-red-2 text-lg">$4,856.00</p>
             </article>
         </a>
-        
     </div>
     <!-- Pagination -->
     <div>

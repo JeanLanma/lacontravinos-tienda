@@ -21,7 +21,7 @@
     </head>
     <body class="font-sans antialiased bg-main-black">
         <div class="min-h-screen bg-gray-100">
-            <div class="xl:min-h-[12rem] md:min-h-[6rem] h-64">
+            <div class="xl:min-h-[12rem] md:min-h-[6rem] ">
                 @include('layouts.navigation-store')
             </div>
 
