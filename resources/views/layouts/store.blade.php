@@ -60,6 +60,7 @@
                     </ul>
                 </div>
 
+                @stack('scripts')
             </footer>
         </div>
     </body>
