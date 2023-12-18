@@ -22,71 +22,74 @@
 </section>
 <!-- main - products -->
 <section class="bg-black px-4">
-    <!-- Filters and sorting -->
-    <div class="py-8 lg:py-2">
-        <div class="flex flex-col lg:flex-row items-end lg:justify-end gap-4 lg:gap-8 lg:items-center">
-            <div>
-                <span class="inline-flex items-center gap-2 bg-white h-10 px-4 group">Orden por defecto <span class="group-hover:rotate-180 transition-transform duration-300"><img src="{{ asset('assets/icons/chevron-down.svg') }}" alt="arrow down"></span></span>
-            </div>
-            <div>
-                <p class="text-white">Showing <span>1</span>– <span>12</span> of <span>257</span> item(s)</p>
-            </div>
-            <div>
-                <div class="inline-flex items-center gap-2 bg-white h-10 px-4 group">
-                    <span class="text-sm">
-                        Mostrar
-                    </span>
-                    <ul class="flex gap-4 text-sm">
-                        <li class="text-main-red">12</li>
-                        <li>24</li>
-                        <li>36</li>
-                    </ul>
+<div class="flex flex-wrap justify-center">
+    <div class="md:order-2 md:flex md:flex-col md:justify-center md:items-end">
+        <!-- Filters and sorting -->
+        <div class="py-8 lg:py-2">
+            <div class="flex flex-col lg:flex-row items-end lg:justify-end gap-4 lg:gap-8 lg:items-center">
+                <div>
+                    <span class="inline-flex items-center gap-2 bg-white h-10 px-4 group">Orden por defecto <span class="group-hover:rotate-180 transition-transform duration-300"><img src="{{ asset('assets/icons/chevron-down.svg') }}" alt="arrow down"></span></span>
+                </div>
+                <div class="hidden md:block">
+                    <p class="text-white">Showing <span>1</span>– <span>12</span> of <span>257</span> item(s)</p>
+                </div>
+                <div>
+                    <div class="inline-flex items-center gap-2 bg-white h-10 px-4 group">
+                        <span class="text-sm">
+                            Mostrar
+                        </span>
+                        <ul class="flex gap-4 text-sm">
+                            <li class="text-main-red">12</li>
+                            <li>24</li>
+                            <li>36</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
+        <!-- Products -->
+        <div class="md:flex md:max-w-4xl">
+            <a href="#">
+                <article class="py-4 flex flex-col items-center gap-1">
+                    <div>
+                        <img src="{{ asset('assets/tmp/18-Cosechas-2-600x899.png') }}" alt="Producto 18 cosechas">
+                    </div>
+                    <div class="flex flex-col items-center gap-3">
+                        <h3 class="text-white text-base">18 cosechas</h3>
+                        <p class="text-main-red-2 text-lg">$4,856.00</p>
+                </article>
+            </a>
+            
+            <a href="#">
+                <article class="py-4 flex flex-col items-center gap-1">
+                    <div>
+                        <img src="{{ asset('assets/tmp/18-Cosechas-2-600x899.png') }}" alt="Producto 18 cosechas">
+                    </div>
+                    <div class="flex flex-col items-center gap-3">
+                        <h3 class="text-white text-base">18 cosechas</h3>
+                        <p class="text-main-red-2 text-lg">$4,856.00</p>
+                </article>
+            </a>
+            
+            <a href="#">
+                <article class="py-4 flex flex-col items-center gap-1">
+                    <div>
+                        <img src="{{ asset('assets/tmp/18-Cosechas-2-600x899.png') }}" alt="Producto 18 cosechas">
+                    </div>
+                    <div class="flex flex-col items-center gap-3">
+                        <h3 class="text-white text-base">18 cosechas</h3>
+                        <p class="text-main-red-2 text-lg">$4,856.00</p>
+                </article>
+            </a>
+        </div>
     </div>
-    <!-- Products -->
-    <div class="md:flex md:max-w-4xl">
-        <a href="#">
-            <article class="py-4 flex flex-col items-center gap-1">
-                <div>
-                    <img src="{{ asset('assets/tmp/18-Cosechas-2-600x899.png') }}" alt="Producto 18 cosechas">
-                </div>
-                <div class="flex flex-col items-center gap-3">
-                    <h3 class="text-white text-base">18 cosechas</h3>
-                    <p class="text-main-red-2 text-lg">$4,856.00</p>
-            </article>
-        </a>
-        
-        <a href="#">
-            <article class="py-4 flex flex-col items-center gap-1">
-                <div>
-                    <img src="{{ asset('assets/tmp/18-Cosechas-2-600x899.png') }}" alt="Producto 18 cosechas">
-                </div>
-                <div class="flex flex-col items-center gap-3">
-                    <h3 class="text-white text-base">18 cosechas</h3>
-                    <p class="text-main-red-2 text-lg">$4,856.00</p>
-            </article>
-        </a>
-        
-        <a href="#">
-            <article class="py-4 flex flex-col items-center gap-1">
-                <div>
-                    <img src="{{ asset('assets/tmp/18-Cosechas-2-600x899.png') }}" alt="Producto 18 cosechas">
-                </div>
-                <div class="flex flex-col items-center gap-3">
-                    <h3 class="text-white text-base">18 cosechas</h3>
-                    <p class="text-main-red-2 text-lg">$4,856.00</p>
-            </article>
-        </a>
-    </div>
+    
     <!-- Pagination -->
-    <div>
+    <div class="md:order-2">
         @include('store.shared.pagination')
     </div>
-
     <!-- search, categories and filter by price -->
-    <section>
+    <section class="md:order-0">
         <div>
             <!-- search -->
             <aside>
@@ -117,7 +120,7 @@
                     </div>
                 </div>
                 <div>
-                    <ul class="text-main-black-2 text-base">
+                    <ul class="text-main-black-2 text-base py-4">
                         <li class="py-1">
                             <div class="flex justify-between items-center">
                                 <span class="flex">
@@ -194,6 +197,7 @@
             </aside>
         </div>
     </section>
+</div>
 </section>
 
 @push('scripts')
