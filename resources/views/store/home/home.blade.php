@@ -22,7 +22,7 @@
 </section>
 <!-- main - products -->
 <section class="bg-black px-4">
-<div class="flex flex-wrap justify-center">
+<div class="flex flex-wrap justify-center max-w-7xl md:mx-auto">
     <div class="md:order-2 md:flex md:flex-col md:justify-center md:items-end">
         <!-- Filters and sorting -->
         <div class="py-8 lg:py-2">
